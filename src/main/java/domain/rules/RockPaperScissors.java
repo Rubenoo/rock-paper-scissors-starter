@@ -15,7 +15,7 @@ public class RockPaperScissors implements Rules {
                     case PAPER:
                         return Result.LOSE;
                 }
-
+                return Result.DRAW;
             case PAPER:
                 switch (theirs) {
                     case ROCK:
@@ -23,7 +23,7 @@ public class RockPaperScissors implements Rules {
                     case SCISSORS:
                         return Result.LOSE;
                 }
-
+                return Result.DRAW;
             case SCISSORS:
                 switch (theirs) {
                     case PAPER:
@@ -32,7 +32,6 @@ public class RockPaperScissors implements Rules {
                         return Result.LOSE;
                 }
         }
-
         return Result.DRAW;
     }
 }
